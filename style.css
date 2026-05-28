@@ -1,0 +1,359 @@
+/* RESET */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background:#f5f1e8;
+  color:#222;
+  overflow-x:hidden;
+}
+
+/* MENU */
+
+.topo{
+  width:100%;
+  padding:20px 8%;
+  background:#111;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  position:fixed;
+  top:0;
+  z-index:1000;
+}
+
+.logo h2{
+  color:#ffd000;
+}
+
+nav{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#ffd000;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background:url('img/Capa.png');
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  position:relative;
+}
+
+.overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.ano{
+  color:#ffd000;
+  font-size:22px;
+  margin-bottom:20px;
+}
+
+.hero-content h1{
+  font-size:80px;
+  color:#ff3c00;
+  margin-bottom:20px;
+}
+
+.descricao{
+  font-size:24px;
+  margin-bottom:30px;
+}
+
+.hero-content button{
+  padding:16px 40px;
+  border:none;
+  border-radius:10px;
+
+  background:#ffd000;
+  color:#111;
+
+  font-size:18px;
+  font-weight:bold;
+
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero-content button:hover{
+  transform:scale(1.05);
+}
+
+/* CONTAINER */
+
+.container{
+  width:100%;
+  padding:100px 10%;
+}
+
+/* HISTORIA */
+
+.historia{
+  display:flex;
+  gap:50px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.texto{
+  flex:1;
+  min-width:300px;
+}
+
+.texto h2{
+  font-size:42px;
+  margin-bottom:25px;
+  color:#8b0000;
+}
+
+.texto p{
+  font-size:20px;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+.quote{
+  background:white;
+  border-left:8px solid #ff3c00;
+  padding:25px;
+  border-radius:10px;
+  margin-top:30px;
+
+  font-style:italic;
+}
+
+.quote span{
+  display:block;
+  margin-top:10px;
+  font-weight:bold;
+}
+
+.imagem{
+  flex:1;
+  min-width:300px;
+}
+
+.imagem img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* CARDS */
+
+.cards-section{
+  background:white;
+  padding:100px 10%;
+}
+
+.cards-section h2{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:60px;
+  color:#8b0000;
+}
+
+.cards-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:35px;
+}
+
+.card{
+  background:#f5f1e8;
+  border-radius:20px;
+  overflow:hidden;
+
+  box-shadow:0 8px 25px rgba(0,0,0,0.15);
+
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:25px;
+}
+
+.card-content h3{
+  margin-bottom:15px;
+  color:#8b0000;
+}
+
+/* GALERIA */
+
+.galeria{
+  padding:100px 10%;
+}
+
+.galeria h2{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:50px;
+  color:#8b0000;
+}
+
+.grid-galeria{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.grid-galeria img{
+  width:100%;
+  border-radius:20px;
+  transition:0.4s;
+}
+
+.grid-galeria img:hover{
+  transform:scale(1.03);
+}
+
+/* CURIOSIDADES */
+
+.curiosidades{
+  background:#8b0000;
+  color:white;
+  padding:100px 10%;
+}
+
+.curiosidades h2{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:60px;
+}
+
+.curiosidades-container{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.box{
+  flex:1;
+  min-width:250px;
+
+  background:white;
+  color:#222;
+
+  padding:30px;
+  border-radius:20px;
+}
+
+.box h3{
+  margin-bottom:15px;
+  color:#8b0000;
+}
+
+/* AUTOR */
+
+.autor{
+  padding:100px 10%;
+
+  display:flex;
+  justify-content:center;
+}
+
+.autor-card{
+  background:#111;
+  color:white;
+
+  padding:50px;
+  border-radius:20px;
+
+  text-align:center;
+
+  width:500px;
+}
+
+.autor-card h2{
+  color:#ffd000;
+  margin-bottom:20px;
+}
+
+.autor-card h3{
+  font-size:35px;
+  margin:20px 0;
+}
+
+/* FOOTER */
+
+footer{
+  background:#000;
+  color:white;
+  text-align:center;
+  padding:50px;
+}
+
+footer h2{
+  color:#ffd000;
+  margin-bottom:20px;
+}
+
+.copyright{
+  margin-top:20px;
+  opacity:0.7;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+  .hero-content h1{
+    font-size:50px;
+  }
+
+  .topo{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+}
